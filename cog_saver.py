@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """CoG Saver - A save manager for Choice of Games titles."""
 
 from __future__ import annotations
