@@ -71,14 +71,7 @@ jobs:
         uv sync --dev
 
     - name: Build with PyInstaller
-      run: |
-        uv run pyinstaller \
-          --name "CoGSaver" \
-          --windowed \
-          --onedir \
-          --clean \
-          --noconfirm \
-          cog_saver.py
+      run: uv run pyinstaller --name "CoGSaver" --windowed --onedir --clean --noconfirm cog_saver.py
 
     - name: Create archive (Windows)
       if: matrix.platform == 'windows'
